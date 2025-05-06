@@ -1,6 +1,14 @@
 # 旅游笔记平台
 
-一个完整的旅游笔记平台，包含移动端用户应用和后台管理系统。
+一个完全不整的旅游笔记平台，包含移动端用户应用和后台管理系统。
+
+参加携程前端训练营没参加上，第一次用react，不懂。面向GPT的copy开发。
+主要做了mobile端，PC端全部AI生成。
+<img src="./public/pc.png" alt="Edge"  />
+<img src="./public/mobile1.pic.jpg" alt="Edge"  />
+<img src="./public/mobile2.jpg" alt="Edge"  />
+<img src="./public/mobile3.pic.jpg" alt="Edge"  />
+
 
 ## 项目架构
 
