@@ -1,0 +1,17 @@
+# 移动端
+mobile-web/build/
+mobile-web/node_modules/
+mobile-web/.idea/
+
+# vscode配置
+.vscode/
+.idea/
+# PC端
+admin-dashboard/node_modules/
+
+# 后端
+backend/.idea/
+backend/target/
+backend/.DS_Store
+
+.DS_Store

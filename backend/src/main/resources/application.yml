@@ -1,0 +1,88 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+    allow-circular-references: true
+  application:
+    name: travel-notes-platform
+  
+  # Database configuration
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/travel_notes?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+  
+  # RabbitMQ configuration
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: admin
+    virtual-host: /
+    listener:
+      simple:
+        acknowledge-mode: manual
+  
+  # File upload configuration
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 100MB
+  
+  # Spring MVC configuration
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  sql:
+    init:
+      mode: embedded
+      schema-locations: classpath:sql/schema.sql
+      encoding: utf-8
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      password: 123456
+      database: 0
+      timeout: 10000
+
+# MinIO configuration
+minio:
+  endpoint: http://localhost:9001
+  accessKey:  MwFjUvtqoNMwgMIggu0r #Login Account
+  secretKey:  oJxP1QB74ie5TwucHxQhONDdQFe7X5MVw3cLp5Ye # Login Password
+  bucketName: travel-notes
+
+# MyBatis-Plus configuration
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+  type-aliases-package: com.travelnote.entity
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: AUTO
+      logic-delete-field: deleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
+# JWT configuration
+jwt:
+  secret: secret0123456789abcdefghijklmnopqrstuvwxyz
+  expiration: 86400000  # 24 hours in milliseconds
+  refreshExpiration: 604800000  # 7 days in milliseconds
+  header: Authorization
+  tokenPrefix: "Bearer "
+  refreshMaxUsage: 5
+
+app:
+  minio-migration:
+    enabled: false  # 默认不启用迁移，可在启动参数中覆盖此配置
+    auto-run: false # 是否在应用启动时自动执行迁移
