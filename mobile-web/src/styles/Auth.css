@@ -1,0 +1,78 @@
+.auth-form-container {
+  padding: 16px 8px;
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-form-container h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #001529;
+}
+
+.auth-form {
+  max-width: 100%;
+}
+
+.auth-form-button {
+  width: 100%;
+}
+
+.auth-form-links {
+  margin-top: 16px;
+  text-align: center;
+}
+
+/* 页面切换动画相关样式 */
+.page-transition-enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.page-transition-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page-transition-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.page-transition-exit-active {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 300ms, transform 300ms;
+}
+
+/* 反向动画（从右到左） */
+.page-transition-reverse-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.page-transition-reverse-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page-transition-reverse-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.page-transition-reverse-exit-active {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 300ms, transform 300ms;
+}
+
+@media (max-width: 768px) {
+  .auth-form-container {
+    padding: 8px 0;
+  }
+}

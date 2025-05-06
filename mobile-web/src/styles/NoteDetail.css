@@ -1,0 +1,89 @@
+.note-detail-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px 8px;
+}
+
+.note-detail-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.note-detail-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  font-size: 16px;
+  color: #999;
+}
+
+.note-author-info {
+  display: flex;
+  align-items: center;
+  margin: 16px 0;
+}
+
+.note-author-name {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+}
+
+.note-location {
+  margin-top: 8px;
+}
+
+.note-content {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.note-media {
+  margin-top: 16px;
+}
+
+.note-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.note-video {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.note-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.view-count {
+  color: #999;
+}
+
+.note-comments {
+  margin-top: 24px;
+}
+
+@media (max-width: 768px) {
+  .note-detail-container {
+    padding: 8px 0;
+  }
+  
+  .note-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .note-actions .ant-space {
+    margin-bottom: 16px;
+  }
+  
+  .view-count {
+    margin-top: 8px;
+  }
+} 

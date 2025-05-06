@@ -1,0 +1,30 @@
+.note-form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px 8px;
+}
+
+.cover-preview {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.cover-preview img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cover-selection img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .note-form-container {
+    padding: 8px 0;
+  }
+} 

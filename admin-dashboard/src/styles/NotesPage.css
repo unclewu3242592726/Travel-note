@@ -1,0 +1,29 @@
+.notes-page-container {
+  width: 100%;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.page-header h2 {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .page-header h2 {
+    margin-bottom: 16px;
+  }
+  
+  .page-header .ant-input-search {
+    width: 100% !important;
+  }
+} 

@@ -1,0 +1,23 @@
+.auth-form-container {
+  padding: 16px 8px;
+}
+
+.auth-form-container h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #001529;
+}
+
+.auth-form {
+  max-width: 100%;
+}
+
+.auth-form-button {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .auth-form-container {
+    padding: 8px 0;
+  }
+} 

@@ -1,0 +1,60 @@
+.media-editor {
+  margin-bottom: 16px;
+}
+
+/* 拖拽相关样式 */
+.media-dragging {
+  opacity: 0.6;
+}
+
+.media-item {
+  transition: all 0.2s ease;
+}
+
+.media-item-cover {
+  border: 2px solid #1976d2;
+  position: relative;
+}
+
+/* 覆盖Material-UI的一些默认样式 */
+.MuiCard-root.media-item {
+  cursor: move;
+}
+
+/* 上传进度条样式 */
+.media-upload-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  color: white;
+}
+
+/* 拖拽手柄样式 */
+.drag-handle {
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+  cursor: grab;
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 拖拽过程中的样式 */
+.dragging {
+  opacity: 0.7;
+  transform: scale(1.05);
+  z-index: 100;
+}

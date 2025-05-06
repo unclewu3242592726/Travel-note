@@ -4,6 +4,7 @@ mobile-web/node_modules/
 mobile-web/.idea/
 mobile-web/.DS_Store
 mobile-web/.git/
+mobile-web/android/
 
 # vscode配置
 .vscode/
@@ -15,6 +16,7 @@ admin-dashboard/.git/
 # 后端
 backend/.idea/
 backend/target/
+backend/
 backend/.DS_Store
 
 .DS_Store
