@@ -5,9 +5,9 @@
 参加携程前端训练营没参加上，第一次用react，不懂。面向GPT的copy开发。
 主要做了mobile端，PC端全部AI生成。
 <img src="./public/pc.png" alt="Edge"  />
-<img src="./public/mobile1.pic.jpg" width="160px"  />
-<img src="./public/mobile2.jpg" width="160px"  />
-<img src="./public/mobile3.pic.jpg"  width="160px" />
+<img src="./public/mobile1.pic.jpg" width="200px"  />
+<img src="./public/mobile2.jpg" width="200px"  />
+<img src="./public/mobile3.pic.jpg"  width="200px" />
 
 
 ## 项目架构
@@ -26,6 +26,7 @@
 - TypeScript
 - React Router
 - Ant Design
+- MUI
 - Axios
 - ECharts (管理后台数据可视化)
 
@@ -33,11 +34,11 @@
 
 - Java
 - Spring Boot
-- Spring Security + JWT
+- Spring Security + JWT（双token+redis黑名单）
 - MyBatis-Plus
 - Redis
 - MinIO
-- RabbitMQ
+- RabbitMQ(没用到)
 - MySQL
 
 ## 功能特性
